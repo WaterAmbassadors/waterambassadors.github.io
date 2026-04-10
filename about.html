@@ -1,102 +1,175 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About — Water Ambassadors</title>
-  <link rel="icon" href="favicon.ico" type="image/x-icon" />
-  <link rel="stylesheet" href="css/style.css" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    /* Hide the PDF viewer's own scrollbar inside the iframe */
-    .ppt-embed { position: relative; }
-    .ppt-embed iframe { overflow: hidden; }
-  </style>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>About — Water Ambassadors</title>
+        <link rel="icon" href="favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="css/style.css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <style>
+            /* Hide the PDF viewer's own scrollbar inside the iframe */
+            .ppt-embed {
+                position: relative;
+            }
+            .ppt-embed iframe {
+                overflow: hidden;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="ocean-bg" aria-hidden="true"></div>
 
-<div class="ocean-bg" aria-hidden="true"></div>
-
-<nav id="navbar">
-  <div class="nav-inner">
-    <a href="index.html" class="nav-brand">
-      <img src="images/logo.png" alt="Water Ambassadors Logo" class="nav-logo" />
-      <div class="nav-title">Water Ambassadors<span>Conserve · Educate · Act</span></div>
-    </a>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="team.html">Team</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-    <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
-  </div>
-</nav>
-<div class="nav-mobile" id="nav-mobile">
-  <a href="index.html">Home</a><a href="about.html">About</a><a href="team.html">Team</a><a href="contact.html">Contact</a>
-</div>
-
-<main class="page-wrapper">
-
-  <div class="page-hero" style="padding:100px 24px 60px;">
-    <div class="page-hero-bg"></div>
-    <p class="section-label reveal">Our Story</p>
-    <h1 class="section-title reveal reveal-delay-1" style="text-align:center;">About <span class="accent">Us</span></h1>
-    <p class="section-subtitle reveal reveal-delay-2" style="text-align:center;margin:0 auto;">A movement rooted in education, passion, and the belief that students can change the world.</p>
-  </div>
-
-  <!-- Initiative blurb -->
-  <section style="padding:40px 24px 60px;">
-    <div class="glass" style="padding:48px;max-width:860px;margin:0 auto;">
-      <p class="section-label reveal">The Initiative</p>
-      <h2 class="section-title reveal reveal-delay-1" style="margin-bottom:24px;">What is <span class="accent">Water Ambassadors?</span></h2>
-      <div style="color:var(--text-secondary);line-height:1.85;font-size:.98rem;" class="reveal reveal-delay-2">
-        <p style="margin-bottom:16px;">Water Ambassadors is a student-driven environmental initiative focused on raising awareness, fostering responsibility, and inspiring action around water conservation. Launched under the guidance of the Living Peace Projects Foundation, the programme spans multiple regional schools and creates a network of young environmental stewards.</p>
-        <p style="margin-bottom:16px;">Students who join the programme undergo workshops, conduct campus audits, create awareness campaigns, and engage with their communities to promote responsible water use. The goal is not just awareness — it is a lasting cultural shift in how young people relate to and respect water.</p>
-        <p>The programme is built on three pillars: <strong style="color:var(--text-accent);">Awareness</strong> — educating students about the global water crisis; <strong style="color:var(--text-accent);">Action</strong> — hands-on drives, audits, and campaigns; and <strong style="color:var(--text-accent);">Advocacy</strong> — amplifying the message beyond school walls.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Organisations -->
-  <section style="padding:20px 24px 80px;">
-    <p class="section-label reveal" style="text-align:center;">The Parties Involved</p>
-    <h2 class="section-title reveal reveal-delay-1" style="text-align:center;margin-bottom:48px;">United by a <span class="accent">Common Purpose</span></h2>
-    <div class="about-page-grid">
-      <div class="org-card glass reveal reveal-delay-2">
-        <div class="org-logo-wrap">
-          <img src="images/school-logo.png" alt="Our School" onerror="this.style.display='none';this.parentElement.innerHTML='<div style=\'font-size:2.5rem;\'>🏫</div>'" />
+        <nav id="navbar">
+            <div class="nav-inner">
+                <a href="index.html" class="nav-brand">
+                    <img src="images/logo.png" alt="Water Ambassadors Logo" class="nav-logo" />
+                    <div class="nav-title">Water Ambassadors<span>Conserve · Educate · Act</span></div>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </nav>
+        <div class="nav-mobile" id="nav-mobile">
+            <a href="index.html">Home</a><a href="about.html">About</a><a href="team.html">Team</a
+            ><a href="contact.html">Contact</a>
         </div>
-        <h3 class="org-name">Our School</h3>
-        <p class="org-desc">A forward-thinking institution committed to holistic education, our school provided the foundation and infrastructure for the Water Ambassadors programme. With a strong culture of social responsibility, students here are encouraged to look beyond textbooks and contribute meaningfully to society.</p>
-        <p class="org-desc" style="margin-top:12px;">The school's Environmental Science and Student Council departments serve as the primary organisers of on-campus activities under the Water Ambassadors umbrella.</p>
-      </div>
-      <div class="org-card glass reveal reveal-delay-3">
-        <div class="org-logo-wrap">
-          <img src="images/lppf-logo.png" alt="Living Peace Projects Foundation" onerror="this.style.display='none';this.parentElement.innerHTML='<div style=\'font-size:2.5rem;\'>🌊</div>'" />
-        </div>
-        <h3 class="org-name">Living Peace Projects Foundation</h3>
-        <p class="org-desc">The Living Peace Projects Foundation (LPPF) is an international non-profit organisation dedicated to fostering sustainable development, environmental education, and community peace-building. Through programmes spanning multiple countries, LPPF empowers youth to become leaders in conservation.</p>
-        <p class="org-desc" style="margin-top:12px;">Chairman Ms. Brigitte Madeleine van Baren personally championed the Water Ambassadors programme and facilitated its introduction to our school, bringing both resources and expertise to help students make a real difference.</p>
-      </div>
-    </div>
-  </section>
 
-  <!-- ═══ PRESENTATIONS ═══ -->
-  <section style="padding:20px 24px 80px;">
-    <p class="section-label reveal" style="text-align:center;">Resources</p>
-    <h2 class="section-title reveal reveal-delay-1" style="text-align:center;margin-bottom:12px;">Programme <span class="accent">Presentations</span></h2>
-    <p class="section-subtitle reveal reveal-delay-2" style="text-align:center;margin:0 auto 60px;">
-      Slideshows used in our Water Ambassadors workshops and awareness sessions.
-    </p>
+        <main class="page-wrapper">
+            <div class="page-hero" style="padding: 100px 24px 60px">
+                <div class="page-hero-bg"></div>
+                <p class="section-label reveal">Our Story</p>
+                <h1 class="section-title reveal reveal-delay-1" style="text-align: center">
+                    About <span class="accent">Us</span>
+                </h1>
+                <p class="section-subtitle reveal reveal-delay-2" style="text-align: center; margin: 0 auto">
+                    A movement rooted in education, passion, and the belief that students can change the world.
+                </p>
+            </div>
 
-    <!-- Presentation 1 -->
-    <div class="reveal reveal-delay-2" style="max-width:900px;margin:0 auto 64px;">
-      <h3 style="font-family:var(--font-display);font-size:1.1rem;color:var(--text-accent);margin-bottom:16px;">
-        Presentation 1 — Introduction to Water Ambassadors
-      </h3>
-      <div class="ppt-embed">
-        <!--
+            <!-- Initiative blurb -->
+            <section style="padding: 40px 24px 60px">
+                <div class="glass" style="padding: 48px; max-width: 860px; margin: 0 auto">
+                    <p class="section-label reveal">The Initiative</p>
+                    <h2 class="section-title reveal reveal-delay-1" style="margin-bottom: 24px">
+                        What is <span class="accent">Water Ambassadors?</span>
+                    </h2>
+                    <div
+                        style="color: var(--text-secondary); line-height: 1.85; font-size: 0.98rem"
+                        class="reveal reveal-delay-2"
+                    >
+                        <p style="margin-bottom: 16px">
+                            Water Ambassadors is a student-driven environmental initiative focused on raising awareness,
+                            fostering responsibility, and inspiring action around water conservation. Launched under the
+                            guidance of the Living Peace Projects Foundation, the programme spans multiple regional
+                            schools and creates a network of young environmental stewards.
+                        </p>
+                        <p style="margin-bottom: 16px">
+                            Students who join the programme undergo workshops, conduct campus audits, create awareness
+                            campaigns, and engage with their communities to promote responsible water use. The goal is
+                            not just awareness — it is a lasting cultural shift in how young people relate to and
+                            respect water.
+                        </p>
+                        <p>
+                            The programme is built on three pillars:
+                            <strong style="color: var(--text-accent)">Awareness</strong> — educating students about the
+                            global water crisis; <strong style="color: var(--text-accent)">Action</strong> — hands-on
+                            drives, audits, and campaigns; and
+                            <strong style="color: var(--text-accent)">Advocacy</strong> — amplifying the message beyond
+                            school walls.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Organisations -->
+            <section style="padding: 20px 24px 80px">
+                <p class="section-label reveal" style="text-align: center">The Parties Involved</p>
+                <h2 class="section-title reveal reveal-delay-1" style="text-align: center; margin-bottom: 48px">
+                    United by a <span class="accent">Common Purpose</span>
+                </h2>
+                <div class="about-page-grid">
+                    <div class="org-card glass reveal reveal-delay-2">
+                        <div class="org-logo-wrap">
+                            <img
+                                src="images/school-logo.png"
+                                alt="Our School"
+                                onerror="
+                                    this.style.display = 'none';
+                                    this.parentElement.innerHTML = '<div style=\'font-size:2.5rem;\'>🏫</div>';
+                                "
+                            />
+                        </div>
+                        <h3 class="org-name">Our School</h3>
+                        <p class="org-desc">
+                            A forward-thinking institution committed to holistic education, our school provided the
+                            foundation and infrastructure for the Water Ambassadors programme. With a strong culture of
+                            social responsibility, students here are encouraged to look beyond textbooks and contribute
+                            meaningfully to society.
+                        </p>
+                        <p class="org-desc" style="margin-top: 12px">
+                            The school's Environmental Science and Student Council departments serve as the primary
+                            organisers of on-campus activities under the Water Ambassadors umbrella.
+                        </p>
+                    </div>
+                    <div class="org-card glass reveal reveal-delay-3">
+                        <div class="org-logo-wrap">
+                            <img
+                                src="images/lppf-logo.png"
+                                alt="Living Peace Projects Foundation"
+                                onerror="
+                                    this.style.display = 'none';
+                                    this.parentElement.innerHTML = '<div style=\'font-size:2.5rem;\'>🌊</div>';
+                                "
+                            />
+                        </div>
+                        <h3 class="org-name">Living Peace Projects Foundation</h3>
+                        <p class="org-desc">
+                            The Living Peace Projects Foundation (LPPF) is an international non-profit organisation
+                            dedicated to fostering sustainable development, environmental education, and community
+                            peace-building. Through programmes spanning multiple countries, LPPF empowers youth to
+                            become leaders in conservation.
+                        </p>
+                        <p class="org-desc" style="margin-top: 12px">
+                            Chairman Ms. Brigitte Madeleine van Baren personally championed the Water Ambassadors
+                            programme and facilitated its introduction to our school, bringing both resources and
+                            expertise to help students make a real difference.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ═══ PRESENTATIONS ═══ -->
+            <section style="padding: 20px 24px 80px">
+                <p class="section-label reveal" style="text-align: center">Resources</p>
+                <h2 class="section-title reveal reveal-delay-1" style="text-align: center; margin-bottom: 12px">
+                    Programme <span class="accent">Presentations</span>
+                </h2>
+                <p class="section-subtitle reveal reveal-delay-2" style="text-align: center; margin: 0 auto 60px">
+                    Slideshows used in our Water Ambassadors workshops and awareness sessions.
+                </p>
+
+                <!-- Presentation 1 -->
+                <div class="reveal reveal-delay-2" style="max-width: 900px; margin: 0 auto 64px">
+                    <h3
+                        style="
+                            font-family: var(--font-display);
+                            font-size: 1.1rem;
+                            color: var(--text-accent);
+                            margin-bottom: 16px;
+                        "
+                    >
+                        Presentation — Introduction to Water Ambassadors
+                    </h3>
+                    <div class="ppt-embed">
+                        <!--
           HOW TO USE:
 
           OPTION A — Google Slides (best, no scrollbar, fills box perfectly):
@@ -111,55 +184,44 @@
             3. The #toolbar=0&navpanes=0 params hide Chrome's PDF toolbar.
                Firefox ignores these; use Option A for best cross-browser result.
         -->
-        <iframe
-          src="presentations/presentation1.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitH"
-          title="Water Ambassadors Introduction"
-          allowfullscreen
-          loading="lazy"
-          scrolling="no">
-        </iframe>
-      </div>
-    </div>
+                        <iframe
+                            src="https://docs.google.com/presentation/d/e/2PACX-1vQj0Tr-YiIsNcVGytISnk7tyhPVzpJCmmX5P9SDyZ2RdNPoAw9Kr2qXYpZH14gVHMoSoCDt0s_V3OJR/pubembed?start=false&loop=true&delayms=3000"
+                            frameborder="0"
+                            width="960"
+                            height="569"
+                            allowfullscreen="true"
+                            mozallowfullscreen="true"
+                            webkitallowfullscreen="true"
+                        ></iframe>
+                    </div>
+                </div>
+                </div>
+            </section>
+        </main>
 
-    <!-- Presentation 2 -->
-    <div class="reveal reveal-delay-3" style="max-width:900px;margin:0 auto;">
-      <h3 style="font-family:var(--font-display);font-size:1.1rem;color:var(--text-accent);margin-bottom:16px;">
-        Presentation 2 — Water Conservation in Practice
-      </h3>
-      <div class="ppt-embed">
-        <iframe
-          src="presentations/presentation2.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitH"
-          title="Water Conservation in Practice"
-          allowfullscreen
-          loading="lazy"
-          scrolling="no">
-        </iframe>
-      </div>
-    </div>
+        <footer>
+            <div class="footer-inner">
+                <div>
+                    <div class="footer-brand">
+                        <img src="images/logo.png" alt="Water Ambassadors" class="footer-logo" />
+                        <span class="footer-name">Water Ambassadors</span>
+                    </div>
+                    <p class="footer-quote">In every drop of water, there is a story of life.</p>
+                </div>
+                <div class="footer-right">
+                    <div class="footer-links">
+                        <a href="index.html">Home</a><a href="about.html">About</a><a href="team.html">Team</a
+                        ><a href="contact.html">Contact</a>
+                    </div>
+                    <p style="font-size: 0.75rem; color: var(--text-secondary)">© 2025 Water Ambassadors</p>
+                    <p class="footer-credit">
+                        Created by
+                        <a href="https://rishitc17.github.io" target="_blank" rel="noopener">Rishit Choudhary</a>
+                    </p>
+                </div>
+            </div>
+        </footer>
 
-  </section>
-
-</main>
-
-<footer>
-  <div class="footer-inner">
-    <div>
-      <div class="footer-brand">
-        <img src="images/logo.png" alt="Water Ambassadors" class="footer-logo" />
-        <span class="footer-name">Water Ambassadors</span>
-      </div>
-      <p class="footer-quote">In every drop of water, there is a story of life.</p>
-    </div>
-    <div class="footer-right">
-      <div class="footer-links">
-        <a href="index.html">Home</a><a href="about.html">About</a><a href="team.html">Team</a><a href="contact.html">Contact</a>
-      </div>
-      <p style="font-size:.75rem;color:var(--text-secondary);">© 2025 Water Ambassadors</p>
-      <p class="footer-credit">Created by <a href="https://rishitc17.github.io" target="_blank" rel="noopener">Rishit Choudhary</a></p>
-    </div>
-  </div>
-</footer>
-
-<script src="js/main.js"></script>
-</body>
+        <script src="js/main.js"></script>
+    </body>
 </html>
