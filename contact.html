@@ -4,28 +4,19 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact — Water Ambassadors</title>
-  <meta name="description" content="Get in touch with the Water Ambassadors team to collaborate, partner, or join the movement." />
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
   <link rel="stylesheet" href="css/style.css" />
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
 
-<div class="ocean-bg" aria-hidden="true">
-  <div class="wave-layer"></div>
-  <div class="wave-layer"></div>
-  <div class="wave-layer"></div>
-</div>
+<div class="ocean-bg" aria-hidden="true"></div>
 
-<!-- NAVBAR -->
 <nav id="navbar">
   <div class="nav-inner">
     <a href="index.html" class="nav-brand">
       <img src="images/logo.png" alt="Water Ambassadors Logo" class="nav-logo" />
-      <div class="nav-title">
-        Water Ambassadors
-        <span>Conserve · Educate · Act</span>
-      </div>
+      <div class="nav-title">Water Ambassadors<span>Conserve · Educate · Act</span></div>
     </a>
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
@@ -33,112 +24,54 @@
       <li><a href="team.html">Team</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
-    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
-      <span></span><span></span><span></span>
-    </button>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
   </div>
 </nav>
 <div class="nav-mobile" id="nav-mobile">
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="team.html">Team</a>
-  <a href="contact.html">Contact</a>
+  <a href="index.html">Home</a><a href="about.html">About</a><a href="team.html">Team</a><a href="contact.html">Contact</a>
 </div>
 
 <main class="page-wrapper">
 
-  <!-- Page Hero -->
   <div class="page-hero" style="padding:100px 24px 60px;">
     <div class="page-hero-bg"></div>
     <p class="section-label reveal">Reach Out</p>
-    <h1 class="section-title reveal reveal-delay-1" style="text-align:center;">
-      Join the <span class="accent">Wave</span>
-    </h1>
-    <p class="section-subtitle reveal reveal-delay-2" style="text-align:center;margin:0 auto;">
-      Whether you're a school, an organisation, or a passionate individual —
-      your voice adds to the tide of change.
-    </p>
+    <h1 class="section-title reveal reveal-delay-1" style="text-align:center;">Join the <span class="accent">Wave</span></h1>
+    <p class="section-subtitle reveal reveal-delay-2" style="text-align:center;margin:0 auto;">Whether you're a school, an organisation, or a passionate individual — your voice adds to the tide of change.</p>
   </div>
 
-  <!-- ═══════════════════════════════
-       CONTACT GRID
-  ═══════════════════════════════ -->
   <section style="padding:40px 24px 80px;">
     <div class="contact-grid">
-
-      <!-- LEFT: Info -->
       <div class="contact-info reveal">
         <h3>Let's Make Waves Together</h3>
-        <p>
-          We welcome inquiries from schools interested in bringing the Water Ambassadors
-          programme to their campus, organisations looking to partner with us, and
-          individuals who want to contribute to the movement.
-        </p>
-
-        <div class="contact-detail">
-          <div class="icon">🏫</div>
-          <span>Schools &amp; institutions looking to participate</span>
-        </div>
-        <div class="contact-detail">
-          <div class="icon">🤝</div>
-          <span>NGOs and organisations for collaboration</span>
-        </div>
-        <div class="contact-detail">
-          <div class="icon">📢</div>
-          <span>Media and press inquiries</span>
-        </div>
-        <div class="contact-detail">
-          <div class="icon">💡</div>
-          <span>Volunteers and supporters</span>
-        </div>
-
-        <div class="glass" style="padding:24px;margin-top:32px;border-left:3px solid rgba(93,206,236,0.4);">
-          <p style="font-size:0.85rem;color:var(--text-secondary);line-height:1.7;">
-            <strong style="color:var(--ocean-glow);">Response Time:</strong> We aim to respond to all inquiries
-            within 3–5 working days. For urgent matters, please indicate so in your message.
-          </p>
+        <p>We welcome inquiries from schools interested in bringing the Water Ambassadors programme to their campus, organisations looking to partner, and individuals who want to contribute.</p>
+        <div class="contact-detail"><div class="icon">🏫</div><span>Schools &amp; institutions looking to participate</span></div>
+        <div class="contact-detail"><div class="icon">🤝</div><span>NGOs and organisations for collaboration</span></div>
+        <div class="contact-detail"><div class="icon">📢</div><span>Media and press inquiries</span></div>
+        <div class="contact-detail"><div class="icon">💡</div><span>Volunteers and supporters</span></div>
+        <div class="glass" style="padding:24px;margin-top:32px;border-left:3px solid rgba(93,206,236,.4);">
+          <p style="font-size:.85rem;color:var(--text-secondary);line-height:1.7;"><strong style="color:var(--ocean-glow);">Response Time:</strong> We aim to respond within 3–5 working days. For urgent matters, please indicate so in your message.</p>
         </div>
       </div>
 
-      <!-- RIGHT: Form -->
       <div class="contact-form glass reveal reveal-delay-2">
-        <!--
-          STATICFORMS SETUP:
-          1. Go to https://www.staticforms.xyz
-          2. Create an account and get your Access Key
-          3. Replace "YOUR_ACCESS_KEY_HERE" below with your actual key
-          The form will send submissions to your configured email address.
-        -->
-        <form
-          action="https://api.staticforms.xyz/submit"
-          method="POST"
-          id="contact-form"
-        >
-          <!-- StaticForms required fields -->
-          <input type="hidden" name="accessKey" value="sf_fd0d42e6797c38157b0b0f3e" />
-          <!-- Honeypot spam prevention -->
-          <input type="text" name="honeypot" style="display:none" tabindex="-1" />
-          <!-- Redirect after submit (optional — update to your actual domain/path) -->
-          <input type="hidden" name="redirectTo" value="https://waterambassadors.github.io/contact.html?sent=1" />
+        <form action="https://api.staticforms.xyz/submit" method="POST" id="contact-form">
+          <input type="hidden" name="accessKey" value="YOUR_ACCESS_KEY_HERE" />
+          <input type="text"   name="honeypot"  style="display:none" tabindex="-1" />
+          <input type="hidden" name="redirectTo" value="https://yourdomain.github.io/water-ambassadors/contact.html?sent=1" />
 
           <div class="form-group">
             <label class="form-label" for="name">Your Name *</label>
-            <input type="text" id="name" name="name" class="form-control"
-                   placeholder="Jane Smith" required />
+            <input type="text" id="name" name="name" class="form-control" placeholder="Jane Smith" required />
           </div>
-
           <div class="form-group">
             <label class="form-label" for="email">Email Address *</label>
-            <input type="email" id="email" name="email" class="form-control"
-                   placeholder="jane@example.com" required />
+            <input type="email" id="email" name="email" class="form-control" placeholder="jane@example.com" required />
           </div>
-
           <div class="form-group">
             <label class="form-label" for="org">Organisation / School</label>
-            <input type="text" id="org" name="$organisation" class="form-control"
-                   placeholder="Your school or organisation name" />
+            <input type="text" id="org" name="$organisation" class="form-control" placeholder="Your school or organisation" />
           </div>
-
           <div class="form-group">
             <label class="form-label" for="type">I am a... *</label>
             <select id="type" name="$inquiryType" class="form-control" required>
@@ -151,39 +84,27 @@
               <option value="other">Other</option>
             </select>
           </div>
-
           <div class="form-group">
             <label class="form-label" for="subject">Subject *</label>
-            <input type="text" id="subject" name="subject" class="form-control"
-                   placeholder="What is this regarding?" required />
+            <input type="text" id="subject" name="subject" class="form-control" placeholder="What is this regarding?" required />
           </div>
-
           <div class="form-group">
             <label class="form-label" for="message">Your Message *</label>
-            <textarea id="message" name="message" class="form-control"
-                      rows="5" placeholder="Tell us about yourself and how you'd like to get involved..."
-                      required></textarea>
+            <textarea id="message" name="message" class="form-control" rows="5" placeholder="Tell us about yourself and how you'd like to get involved..." required></textarea>
           </div>
-
-          <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;font-size:1rem;">
-            Send Message &nbsp;🌊
-          </button>
+          <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;font-size:1rem;">Send Message &nbsp;🌊</button>
         </form>
-
-        <!-- Success message (shown if redirectTo brings back ?sent=1) -->
         <div class="form-success" id="form-success">
           <p style="font-size:1.5rem;margin-bottom:8px;">🌊</p>
           <p>Thank you! Your message has been sent.</p>
-          <p style="font-size:0.85rem;color:var(--text-secondary);margin-top:8px;">We'll get back to you within 3–5 working days.</p>
+          <p style="font-size:.85rem;color:var(--text-secondary);margin-top:8px;">We'll get back to you within 3–5 working days.</p>
         </div>
       </div>
-
     </div>
   </section>
 
 </main>
 
-<!-- FOOTER -->
 <footer>
   <div class="footer-inner">
     <div>
@@ -191,38 +112,25 @@
         <img src="images/logo.png" alt="Water Ambassadors" class="footer-logo" />
         <span class="footer-name">Water Ambassadors</span>
       </div>
-      <p class="footer-quote">
-        A river cuts through rock not because of its power, but its persistence.
-      </p>
+      <p class="footer-quote">A river cuts through rock not because of its power, but its persistence.</p>
     </div>
     <div class="footer-right">
       <div class="footer-links">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="team.html">Team</a>
-        <a href="contact.html">Contact</a>
+        <a href="index.html">Home</a><a href="about.html">About</a><a href="team.html">Team</a><a href="contact.html">Contact</a>
       </div>
-      <p style="font-size:0.75rem;color:var(--text-secondary);">© 2025 Water Ambassadors</p>
-      <p class="footer-credit">
-        Created by <a href="https://rishitc17.github.io" target="_blank" rel="noopener">Rishit Choudhary</a>
-      </p>
+      <p style="font-size:.75rem;color:var(--text-secondary);">© 2025 Water Ambassadors</p>
+      <p class="footer-credit">Created by <a href="https://rishitc17.github.io" target="_blank" rel="noopener">Rishit Choudhary</a></p>
     </div>
   </div>
 </footer>
 
 <script src="js/main.js"></script>
 <script>
-  // Show success message if redirected back with ?sent=1
-  (function () {
-    if (new URLSearchParams(location.search).get('sent') === '1') {
-      const form = document.getElementById('contact-form');
-      const success = document.getElementById('form-success');
-      if (form && success) {
-        form.style.display = 'none';
-        success.style.display = 'block';
-      }
-    }
-  })();
+  if (new URLSearchParams(location.search).get('sent') === '1') {
+    var f = document.getElementById('contact-form');
+    var s = document.getElementById('form-success');
+    if (f && s) { f.style.display = 'none'; s.style.display = 'block'; }
+  }
 </script>
 </body>
 </html>
