@@ -10,6 +10,7 @@
         />
         <link rel="icon" href="favicon.ico" type="image/x-icon" />
         <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
         <script src="https://cdn.tailwindcss.com"></script>
     </head>
     <body>
@@ -103,8 +104,8 @@
                             agent of conservation. The ripples we create today will become the waves of change tomorrow.
                         </p>
                         <a href="about.html" class="btn btn-glass" style="margin-top: 24px"
-                            >Learn More <span style="font-size: 1.1em">→</span></a
-                        >
+                            >Learn More <i class="fa-solid fa-arrow-right"></i
+                        ></a>
                     </div>
                     <div class="spotlight-card glass reveal reveal-delay-3">
                         <div class="spotlight-img-wrap">
@@ -113,7 +114,7 @@
                                 alt="Ms. Brigitte Madeleine van Baren"
                                 onerror="
                                     this.parentElement.innerHTML =
-                                        '<div style=\'width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:3rem;background:linear-gradient(135deg,#1a4a7a,#2980b9);\'>🌊</div>'
+                                        '<div style=&quot;width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:3rem;background:linear-gradient(135deg,#1a4a7a,#2980b9);&quot;><i class=&quot;fa-solid fa-water&quot;></i></div>'
                                 "
                             />
                         </div>
@@ -187,7 +188,9 @@
                     </div>
                 </div>
                 <div class="gallery-cta reveal reveal-delay-3">
-                    <button id="open-report" class="btn btn-primary">📋 &nbsp;View Full Drive Report</button>
+                    <button id="open-report" class="btn btn-primary">
+                        <i class="fa-solid fa-clipboard"></i> View Full Drive Report
+                    </button>
                 </div>
             </section>
 
@@ -206,9 +209,13 @@
                     <div class="poster-scroller" id="poster-scroller"></div>
 
                     <div class="carousel-controls">
-                        <button class="carousel-btn carousel-prev" aria-label="Previous">&#8592;</button>
+                        <button class="carousel-btn carousel-prev" aria-label="Previous">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </button>
                         <div class="carousel-dots"></div>
-                        <button class="carousel-btn carousel-next" aria-label="Next">&#8594;</button>
+                        <button class="carousel-btn carousel-next" aria-label="Next">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
                     </div>
                 </div>
             </section>
@@ -240,7 +247,7 @@
                             alt="Album art"
                             onerror="
                                 this.style.display = 'none';
-                                this.parentElement.textContent = '🎵';
+                                this.parentElement.innerHTML = '<i class=&quot;fa-solid fa-music&quot;></i>';
                             "
                         />
                     </div>
@@ -261,17 +268,21 @@
                     </div>
 
                     <div class="player-controls">
-                        <button class="ctrl-btn" id="skip-back" title="Back 10s">⏮</button>
-                        <button class="ctrl-btn play-btn" id="play-btn" aria-label="Play/Pause">
-                            <span id="play-icon">▶</span>
+                        <button class="ctrl-btn" id="skip-back" title="Back 10s">
+                            <i class="fa-solid fa-backward"></i>
                         </button>
-                        <button class="ctrl-btn" id="skip-forward" title="Forward 10s">⏭</button>
+                        <button class="ctrl-btn play-btn" id="play-btn" aria-label="Play/Pause">
+                            <i id="play-icon" class="fa-solid fa-play"></i>
+                        </button>
+                        <button class="ctrl-btn" id="skip-forward" title="Forward 10s">
+                            <i class="fa-solid fa-forward"></i>
+                        </button>
                     </div>
 
                     <div class="player-volume">
-                        <span>🔈</span>
+                        <i class="fa-solid fa-volume-low"></i>
                         <input type="range" class="volume-slider" id="volume-input" min="0" max="100" value="80" />
-                        <span>🔊</span>
+                        <i class="fa-solid fa-volume-high"></i>
                     </div>
                 </div>
             </section>
@@ -279,15 +290,15 @@
             <!-- ═══ JOIN CTA ═══ -->
             <section id="join" style="padding: 80px 24px; max-width: 100%">
                 <div class="join-inner glass reveal">
-                    <span class="join-wave-icon">🌊</span>
+                    <i class="join-wave-icon fa-solid fa-water" aria-hidden="true"></i>
                     <h2 class="join-slogan">Join the Wave</h2>
                     <p class="join-sub">
                         Whether you're a school, an organisation, or an inspired individual — there's a place for you in
                         this movement. Every voice amplifies the ripple.
                     </p>
                     <a href="contact.html" class="btn btn-primary" style="font-size: 1rem; padding: 16px 40px"
-                        >Get in Touch &nbsp;→</a
-                    >
+                        >Get in Touch <i class="fa-solid fa-arrow-right"></i
+                    ></a>
                 </div>
             </section>
         </main>
@@ -309,7 +320,7 @@
                         <a href="team.html">Team</a>
                         <a href="contact.html">Contact</a>
                     </div>
-                    <p style="font-size: 0.75rem; color: var(--text-secondary)">© 2025 Water Ambassadors</p>
+                    <p style="font-size: 0.75rem; color: var(--text-secondary)">© 2026 Water Ambassadors</p>
                     <p class="footer-credit">
                         Created by
                         <a href="https://rishitc17.github.io" target="_blank" rel="noopener">Rishit Choudhary</a>

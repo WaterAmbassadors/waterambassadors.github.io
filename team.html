@@ -1,79 +1,88 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Our Team — Water Ambassadors</title>
-  <link rel="icon" href="favicon.ico" type="image/x-icon" />
-  <link rel="stylesheet" href="css/style.css" />
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Our Team — Water Ambassadors</title>
+        <link rel="icon" href="favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body>
+        <div class="ocean-bg" aria-hidden="true"></div>
 
-<div class="ocean-bg" aria-hidden="true"></div>
+        <nav id="navbar">
+            <div class="nav-inner">
+                <a href="index.html" class="nav-brand">
+                    <img src="images/logo.png" alt="Water Ambassadors Logo" class="nav-logo" />
+                    <div class="nav-title">Water Ambassadors<span>Conserve · Educate · Act</span></div>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </nav>
+        <div class="nav-mobile" id="nav-mobile">
+            <a href="index.html">Home</a><a href="about.html">About</a><a href="team.html">Team</a
+            ><a href="contact.html">Contact</a>
+        </div>
 
-<nav id="navbar">
-  <div class="nav-inner">
-    <a href="index.html" class="nav-brand">
-      <img src="images/logo.png" alt="Water Ambassadors Logo" class="nav-logo" />
-      <div class="nav-title">Water Ambassadors<span>Conserve · Educate · Act</span></div>
-    </a>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="team.html">Team</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-    <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
-  </div>
-</nav>
-<div class="nav-mobile" id="nav-mobile">
-  <a href="index.html">Home</a><a href="about.html">About</a><a href="team.html">Team</a><a href="contact.html">Contact</a>
-</div>
+        <main class="page-wrapper">
+            <div class="page-hero" style="padding: 100px 24px 60px">
+                <div class="page-hero-bg"></div>
+                <p class="section-label reveal">The People</p>
+                <h1 class="section-title reveal reveal-delay-1" style="text-align: center">
+                    Meet the <span class="accent">Team</span>
+                </h1>
+                <p class="section-subtitle reveal reveal-delay-2" style="text-align: center; margin: 0 auto">
+                    The passionate students and educators who make the Water Ambassadors movement possible.
+                </p>
+            </div>
 
-<main class="page-wrapper">
+            <section style="padding: 40px 24px 20px">
+                <p class="section-label reveal" style="text-align: center">Faculty &amp; Coordinators</p>
+                <!-- JS renders faculty cards here -->
+                <div class="team-grid" id="faculty-grid" style="max-width: 900px; margin: 0 auto"></div>
+            </section>
 
-  <div class="page-hero" style="padding:100px 24px 60px;">
-    <div class="page-hero-bg"></div>
-    <p class="section-label reveal">The People</p>
-    <h1 class="section-title reveal reveal-delay-1" style="text-align:center;">Meet the <span class="accent">Team</span></h1>
-    <p class="section-subtitle reveal reveal-delay-2" style="text-align:center;margin:0 auto;">The passionate students and educators who make the Water Ambassadors movement possible.</p>
-  </div>
+            <section style="padding: 20px 24px 80px">
+                <p class="section-label reveal" style="text-align: center">Student Ambassadors</p>
+                <!-- JS renders student cards here -->
+                <div class="team-grid" id="student-grid"></div>
+            </section>
+        </main>
 
-  <section style="padding:40px 24px 20px;">
-    <p class="section-label reveal" style="text-align:center;">Faculty &amp; Coordinators</p>
-    <!-- JS renders faculty cards here -->
-    <div class="team-grid" id="faculty-grid" style="max-width:900px;margin:0 auto;"></div>
-  </section>
+        <footer>
+            <div class="footer-inner">
+                <div>
+                    <div class="footer-brand">
+                        <img src="images/logo.png" alt="Water Ambassadors" class="footer-logo" />
+                        <span class="footer-name">Water Ambassadors</span>
+                    </div>
+                    <p class="footer-quote">Alone we are a drop. Together we are an ocean.</p>
+                </div>
+                <div class="footer-right">
+                    <div class="footer-links">
+                        <a href="index.html">Home</a><a href="about.html">About</a><a href="team.html">Team</a
+                        ><a href="contact.html">Contact</a>
+                    </div>
+                    <p style="font-size: 0.75rem; color: var(--text-secondary)">© 2026 Water Ambassadors</p>
+                    <p class="footer-credit">
+                        Created by
+                        <a href="https://rishitc17.github.io" target="_blank" rel="noopener">Rishit Choudhary</a>
+                    </p>
+                </div>
+            </div>
+        </footer>
 
-  <section style="padding:20px 24px 80px;">
-    <p class="section-label reveal" style="text-align:center;">Student Ambassadors</p>
-    <!-- JS renders student cards here -->
-    <div class="team-grid" id="student-grid"></div>
-  </section>
-
-</main>
-
-<footer>
-  <div class="footer-inner">
-    <div>
-      <div class="footer-brand">
-        <img src="images/logo.png" alt="Water Ambassadors" class="footer-logo" />
-        <span class="footer-name">Water Ambassadors</span>
-      </div>
-      <p class="footer-quote">Alone we are a drop. Together we are an ocean.</p>
-    </div>
-    <div class="footer-right">
-      <div class="footer-links">
-        <a href="index.html">Home</a><a href="about.html">About</a><a href="team.html">Team</a><a href="contact.html">Contact</a>
-      </div>
-      <p style="font-size:.75rem;color:var(--text-secondary);">© 2025 Water Ambassadors</p>
-      <p class="footer-credit">Created by <a href="https://rishitc17.github.io" target="_blank" rel="noopener">Rishit Choudhary</a></p>
-    </div>
-  </div>
-</footer>
-
-<!-- ═══════════════════════════════════════════════════════════
+        <!-- ═══════════════════════════════════════════════════════════
      TEAM DATA
      ─────────────────────────────────────────────────────────
      image  : path to photo (relative to site root)
@@ -83,86 +92,86 @@
      role   : role / position shown below the name
      bio    : (optional) one-line description; leave '' to hide
 ═══════════════════════════════════════════════════════════ -->
-<script>
-var FACULTY = [
-  {
-    image : 'images/team/coordinator1.jpg',
-    name  : 'Ms. [Name]',
-    role  : 'Faculty Coordinator',
-    bio   : 'Brief description of this coordinator\'s role in the programme.'
-  },
-  {
-    image : 'images/team/coordinator2.jpg',
-    name  : 'Mr. [Name]',
-    role  : 'Programme Advisor',
-    bio   : 'Brief description of this advisor\'s contribution to Water Ambassadors.'
-  },
-];
+        <script>
+            var FACULTY = [
+                {
+                    image: 'images/team/coordinator1.jpg',
+                    name: 'Ms. [Name]',
+                    role: 'Faculty Coordinator',
+                    bio: "Brief description of this coordinator's role in the programme.",
+                },
+                {
+                    image: 'images/team/coordinator2.jpg',
+                    name: 'Mr. [Name]',
+                    role: 'Programme Advisor',
+                    bio: "Brief description of this advisor's contribution to Water Ambassadors.",
+                },
+            ];
 
-var STUDENTS = [
-  { image: 'images/team/member1.jpg',  name: '[Student Name]', role: 'Lead Ambassador',      bio: '' },
-  { image: 'images/team/member2.jpg',  name: '[Student Name]', role: 'Deputy Ambassador',    bio: '' },
-  { image: 'images/team/member3.jpg',  name: '[Student Name]', role: 'Campaign Head',        bio: '' },
-  { image: 'images/team/member4.jpg',  name: '[Student Name]', role: 'Creative & Media',     bio: '' },
-  { image: 'images/team/member5.jpg',  name: '[Student Name]', role: 'Outreach Coordinator', bio: '' },
-  { image: 'images/team/member6.jpg',  name: '[Student Name]', role: 'Research & Data',      bio: '' },
-  { image: 'images/team/member7.jpg',  name: '[Student Name]', role: 'Music & Arts',         bio: '' },
-  { image: 'images/team/member8.jpg',  name: '[Student Name]', role: 'Community Liaison',    bio: '' },
-  // ── To add more members, copy a line above and fill in the details ──
-];
+            var STUDENTS = [
+                { image: 'images/team/member1.jpg', name: '[Student Name]', role: 'Lead Ambassador', bio: '' },
+                { image: 'images/team/member2.jpg', name: '[Student Name]', role: 'Deputy Ambassador', bio: '' },
+                { image: 'images/team/member3.jpg', name: '[Student Name]', role: 'Campaign Head', bio: '' },
+                { image: 'images/team/member4.jpg', name: '[Student Name]', role: 'Creative & Media', bio: '' },
+                { image: 'images/team/member5.jpg', name: '[Student Name]', role: 'Outreach Coordinator', bio: '' },
+                { image: 'images/team/member6.jpg', name: '[Student Name]', role: 'Research & Data', bio: '' },
+                { image: 'images/team/member7.jpg', name: '[Student Name]', role: 'Music & Arts', bio: '' },
+                { image: 'images/team/member8.jpg', name: '[Student Name]', role: 'Community Liaison', bio: '' },
+                // ── To add more members, copy a line above and fill in the details ──
+            ];
 
-/* ── Renderer — do not edit below this line ── */
-function renderTeam(people, containerId) {
-  var grid = document.getElementById(containerId);
-  if (!grid) return;
-  people.forEach(function (p, i) {
-    var delay = i % 4;
-    var card  = document.createElement('div');
-    card.className = 'team-card glass reveal reveal-delay-' + delay;
+            /* ── Renderer — do not edit below this line ── */
+            function renderTeam(people, containerId) {
+                var grid = document.getElementById(containerId);
+                if (!grid) return;
+                people.forEach(function (p, i) {
+                    var delay = i % 4;
+                    var card = document.createElement('div');
+                    card.className = 'team-card glass reveal reveal-delay-' + delay;
 
-    var photoWrap = document.createElement('div');
-    photoWrap.className = 'team-photo-wrap';
+                    var photoWrap = document.createElement('div');
+                    photoWrap.className = 'team-photo-wrap';
 
-    var img = document.createElement('img');
-    img.src = p.image;
-    img.alt = p.name;
-    img.loading = 'lazy';
-    img.onerror = function () {
-      this.style.display = 'none';
-      var ph = document.createElement('div');
-      ph.className = 'team-photo-placeholder';
-      ph.textContent = '🌊';
-      photoWrap.appendChild(ph);
-    };
-    photoWrap.appendChild(img);
+                    var img = document.createElement('img');
+                    img.src = p.image;
+                    img.alt = p.name;
+                    img.loading = 'lazy';
+                    img.onerror = function () {
+                        this.style.display = 'none';
+                        var ph = document.createElement('div');
+                        ph.className = 'team-photo-placeholder';
+                        ph.innerHTML = '<i class="fa-solid fa-water"></i>';
+                        photoWrap.appendChild(ph);
+                    };
+                    photoWrap.appendChild(img);
 
-    var nameEl = document.createElement('p');
-    nameEl.className = 'team-name';
-    nameEl.textContent = p.name;
+                    var nameEl = document.createElement('p');
+                    nameEl.className = 'team-name';
+                    nameEl.textContent = p.name;
 
-    var roleEl = document.createElement('p');
-    roleEl.className = 'team-role';
-    roleEl.textContent = p.role;
+                    var roleEl = document.createElement('p');
+                    roleEl.className = 'team-role';
+                    roleEl.textContent = p.role;
 
-    card.appendChild(photoWrap);
-    card.appendChild(nameEl);
-    card.appendChild(roleEl);
+                    card.appendChild(photoWrap);
+                    card.appendChild(nameEl);
+                    card.appendChild(roleEl);
 
-    if (p.bio) {
-      var bioEl = document.createElement('p');
-      bioEl.className = 'team-bio';
-      bioEl.textContent = p.bio;
-      card.appendChild(bioEl);
-    }
+                    if (p.bio) {
+                        var bioEl = document.createElement('p');
+                        bioEl.className = 'team-bio';
+                        bioEl.textContent = p.bio;
+                        card.appendChild(bioEl);
+                    }
 
-    grid.appendChild(card);
-  });
-}
+                    grid.appendChild(card);
+                });
+            }
 
-renderTeam(FACULTY,  'faculty-grid');
-renderTeam(STUDENTS, 'student-grid');
-</script>
+            renderTeam(FACULTY, 'faculty-grid');
+            renderTeam(STUDENTS, 'student-grid');
+        </script>
 
-<script src="js/main.js"></script>
-</body>
+        <script src="js/main.js"></script>
+    </body>
 </html>

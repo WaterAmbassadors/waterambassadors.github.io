@@ -339,7 +339,10 @@
 
     /* Toggle playing state — only CSS classes, no inline style on the disc */
     function setPlaying(on) {
-        if (playIcon) playIcon.textContent = on ? '⏸' : '▶';
+        if (playIcon) {
+            playIcon.classList.toggle('fa-play', !on);
+            playIcon.classList.toggle('fa-pause', on);
+        }
         eqBars?.classList.toggle('playing', on);
         disc?.classList.toggle('spinning', on); // CSS spin-disc animation
     }
