@@ -93,70 +93,26 @@
                 </div>
 
                 <div class="partners-track-wrapper reveal">
-                    <div class="partners-track">
-                        <!-- Partner logos — replace src with your actual partner logo files -->
-                        <div class="partner-card glass">
-                            <img
-                                src="images/partners/partner1.png"
-                                alt="Partner 1"
-                                onerror="
-                                    this.parentElement.innerHTML =
-                                        '<span style=\'font-size:0.75rem;color:var(--text-secondary);text-align:center;\'>Partner Logo</span>'
-                                "
-                            />
-                        </div>
-                        <div class="partner-card glass">
-                            <img
-                                src="images/partners/partner2.png"
-                                alt="Partner 2"
-                                onerror="
-                                    this.parentElement.innerHTML =
-                                        '<span style=\'font-size:0.75rem;color:var(--text-secondary);text-align:center;\'>Partner Logo</span>'
-                                "
-                            />
-                        </div>
-                        <div class="partner-card glass">
-                            <img
-                                src="images/partners/partner3.png"
-                                alt="Partner 3"
-                                onerror="
-                                    this.parentElement.innerHTML =
-                                        '<span style=\'font-size:0.75rem;color:var(--text-secondary);text-align:center;\'>Partner Logo</span>'
-                                "
-                            />
-                        </div>
-                        <div class="partner-card glass">
-                            <img
-                                src="images/partners/partner4.png"
-                                alt="Partner 4"
-                                onerror="
-                                    this.parentElement.innerHTML =
-                                        '<span style=\'font-size:0.75rem;color:var(--text-secondary);text-align:center;\'>Partner Logo</span>'
-                                "
-                            />
-                        </div>
-                        <div class="partner-card glass">
-                            <img
-                                src="images/partners/partner5.png"
-                                alt="Partner 5"
-                                onerror="
-                                    this.parentElement.innerHTML =
-                                        '<span style=\'font-size:0.75rem;color:var(--text-secondary);text-align:center;\'>Partner Logo</span>'
-                                "
-                            />
-                        </div>
-                        <div class="partner-card glass">
-                            <img
-                                src="images/partners/partner6.png"
-                                alt="Living Peace Projects Foundation"
-                                onerror="
-                                    this.parentElement.innerHTML =
-                                        '<span style=\'font-size:0.75rem;color:var(--text-secondary);text-align:center;\'>LPPF</span>'
-                                "
-                            />
-                        </div>
-                        <!-- JS will clone these for infinite scroll -->
-                    </div>
+  <div class="partners-track" id="partners-track"></div>
+</div>
+
+<script>
+  // ── ADD YOUR PARTNERS HERE ──
+  // Place logo files in images/partners/ and list filenames below.
+  const PARTNERS = [
+    { file: 'partner1.png', name: 'DPS International' },
+    { file: 'partner2.png', name: 'Living Peace Projects Foundation' },
+  ];
+
+  const track = document.getElementById('partners-track');
+  // Duplicate for seamless infinite loop
+  [...PARTNERS, ...PARTNERS].forEach(p => {
+    const div = document.createElement('div');
+    div.className = 'partner-card glass';
+    div.innerHTML = `<img src="images/partners/${p.file}" alt="${p.name}" />`;
+    track.appendChild(div);
+  });
+</script>
                 </div>
             </section>
 
@@ -300,57 +256,29 @@
                 </div>
 
                 <div class="poster-carousel reveal">
-                    <div class="poster-track">
-                        <!-- Replace with your actual poster images — images/posters/poster1.jpg etc. -->
-                        <div class="poster-slide active glass">
-                            <img
-                                src="images/posters/poster1.png"
-                                alt="Awareness Poster 1"
-                                onerror="
-                                    this.parentElement.style.background = 'linear-gradient(160deg,#0a2342,#1a6a9a)';
-                                    this.style.display = 'none';
-                                "
-                            />
-                            <div class="poster-gradient"></div>
-                            <p class="poster-label">Every Drop Counts</p>
-                        </div>
-                        <div class="poster-slide glass">
-                            <img
-                                src="images/posters/poster2.png"
-                                alt="Awareness Poster 2"
-                                onerror="
-                                    this.parentElement.style.background = 'linear-gradient(160deg,#0f3460,#2980b9)';
-                                    this.style.display = 'none';
-                                "
-                            />
-                            <div class="poster-gradient"></div>
-                            <p class="poster-label">Save Water, Save Life</p>
-                        </div>
-                        <div class="poster-slide glass">
-                            <img
-                                src="images/posters/poster3.png"
-                                alt="Awareness Poster 3"
-                                onerror="
-                                    this.parentElement.style.background = 'linear-gradient(160deg,#0a2342,#1a4a7a)';
-                                    this.style.display = 'none';
-                                "
-                            />
-                            <div class="poster-gradient"></div>
-                            <p class="poster-label">Be the Change</p>
-                        </div>
-                        <div class="poster-slide glass">
-                            <img
-                                src="images/posters/poster4.png"
-                                alt="Awareness Poster 4"
-                                onerror="
-                                    this.parentElement.style.background = 'linear-gradient(160deg,#0d3050,#3daed4)';
-                                    this.style.display = 'none';
-                                "
-                            />
-                            <div class="poster-gradient"></div>
-                            <p class="poster-label">Protect Our Oceans</p>
-                        </div>
-                    </div>
+                    <div class="poster-track" id="poster-track"></div>
+
+<script>
+  // ── ADD YOUR POSTERS HERE ──
+  const POSTERS = [
+    { file: 'poster1.jpg', label: 'Every Drop Counts' },
+    { file: 'poster2.jpg', label: 'Save Water, Save Life' },
+    { file: 'poster3.jpg', label: 'Be the Change' },
+    { file: 'poster4.jpg', label: 'Protect Our Oceans' },
+  ];
+
+  const posterTrack = document.getElementById('poster-track');
+  POSTERS.forEach((p, i) => {
+    const div = document.createElement('div');
+    div.className = 'poster-slide glass' + (i === 0 ? ' active' : '');
+    div.innerHTML = `
+      <img src="images/posters/${p.file}" alt="${p.label}"
+           onerror="this.parentElement.style.background='linear-gradient(160deg,#0a2342,#1a6a9a)';this.style.display='none'" />
+      <div class="poster-gradient"></div>
+      <p class="poster-label">${p.label}</p>`;
+    posterTrack.appendChild(div);
+  });
+</script>
 
                     <div class="carousel-controls">
                         <button class="carousel-btn carousel-prev" aria-label="Previous poster">&#8592;</button>

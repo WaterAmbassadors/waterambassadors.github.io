@@ -1,222 +1,160 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Our Team — Water Ambassadors</title>
-  <meta name="description" content="Meet the dedicated students and staff behind the Water Ambassadors initiative." />
-  <link rel="icon" href="favicon.ico" type="image/x-icon" />
-  <link rel="stylesheet" href="css/style.css" />
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Our Team — Water Ambassadors</title>
+        <meta
+            name="description"
+            content="Meet the dedicated students and staff behind the Water Ambassadors initiative."
+        />
+        <link rel="icon" href="favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="css/style.css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body>
+        <div class="ocean-bg" aria-hidden="true">
+            <div class="wave-layer"></div>
+            <div class="wave-layer"></div>
+            <div class="wave-layer"></div>
+        </div>
 
-<div class="ocean-bg" aria-hidden="true">
-  <div class="wave-layer"></div>
-  <div class="wave-layer"></div>
-  <div class="wave-layer"></div>
-</div>
+        <!-- NAVBAR -->
+        <nav id="navbar">
+            <div class="nav-inner">
+                <a href="index.html" class="nav-brand">
+                    <img src="images/logo.png" alt="Water Ambassadors Logo" class="nav-logo" />
+                    <div class="nav-title">
+                        Water Ambassadors
+                        <span>Conserve · Educate · Act</span>
+                    </div>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </nav>
+        <div class="nav-mobile" id="nav-mobile">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="team.html">Team</a>
+            <a href="contact.html">Contact</a>
+        </div>
 
-<!-- NAVBAR -->
-<nav id="navbar">
-  <div class="nav-inner">
-    <a href="index.html" class="nav-brand">
-      <img src="images/logo.png" alt="Water Ambassadors Logo" class="nav-logo" />
-      <div class="nav-title">
-        Water Ambassadors
-        <span>Conserve · Educate · Act</span>
-      </div>
-    </a>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="team.html">Team</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
-      <span></span><span></span><span></span>
-    </button>
-  </div>
-</nav>
-<div class="nav-mobile" id="nav-mobile">
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="team.html">Team</a>
-  <a href="contact.html">Contact</a>
-</div>
+        <main class="page-wrapper">
+            <!-- Page Hero -->
+            <div class="page-hero" style="padding: 100px 24px 60px">
+                <div class="page-hero-bg"></div>
+                <p class="section-label reveal">The People</p>
+                <h1 class="section-title reveal reveal-delay-1" style="text-align: center">
+                    Meet the <span class="accent">Team</span>
+                </h1>
+                <p class="section-subtitle reveal reveal-delay-2" style="text-align: center; margin: 0 auto">
+                    The passionate students and educators who make the Water Ambassadors movement possible.
+                </p>
+            </div>
 
-<main class="page-wrapper">
-
-  <!-- Page Hero -->
-  <div class="page-hero" style="padding:100px 24px 60px;">
-    <div class="page-hero-bg"></div>
-    <p class="section-label reveal">The People</p>
-    <h1 class="section-title reveal reveal-delay-1" style="text-align:center;">
-      Meet the <span class="accent">Team</span>
-    </h1>
-    <p class="section-subtitle reveal reveal-delay-2" style="text-align:center;margin:0 auto;">
-      The passionate students and educators who make the Water Ambassadors movement possible.
-    </p>
-  </div>
-
-  <!-- ═══════════════════════════════
+            <!-- ═══════════════════════════════
        FACULTY / COORDINATORS
   ═══════════════════════════════ -->
-  <section style="padding:40px 24px 20px;">
-    <p class="section-label reveal" style="text-align:center;">Faculty &amp; Coordinators</p>
+            <section style="padding: 40px 24px 20px">
+                <p class="section-label reveal" style="text-align: center">Faculty &amp; Coordinators</p>
 
-    <div class="team-grid" style="max-width:900px;margin:0 auto;">
-      <!--
-        HOW TO ADD TEAM MEMBERS:
-        1. Add their photo to images/team/name.jpg (square or portrait, any resolution — it auto-scales)
-        2. Copy a .team-card block and fill in name, role, and photo src
-        3. If no photo, remove <img> and the placeholder emoji will show
-      -->
+                <div class="team-grid" id="faculty-grid" style="max-width: 900px; margin: 0 auto"></div>
+            </section>
 
-      <div class="team-card glass reveal">
-        <div class="team-photo-wrap">
-          <img src="images/team/coordinator1.jpg" alt="Faculty Coordinator"
-               onerror="this.style.display='none';this.parentElement.innerHTML='<div class=\'team-photo-placeholder\'>👩‍🏫</div>'" />
-        </div>
-        <p class="team-name">Ms. [Name]</p>
-        <p class="team-role">Faculty Coordinator</p>
-      </div>
-
-      <div class="team-card glass reveal reveal-delay-1">
-        <div class="team-photo-wrap">
-          <img src="images/team/coordinator2.jpg" alt="Programme Advisor"
-               onerror="this.style.display='none';this.parentElement.innerHTML='<div class=\'team-photo-placeholder\'>👨‍🏫</div>'" />
-        </div>
-        <p class="team-name">Mr. [Name]</p>
-        <p class="team-role">Programme Advisor</p>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ═══════════════════════════════
+            <!-- ═══════════════════════════════
        STUDENT AMBASSADORS
   ═══════════════════════════════ -->
-  <section style="padding:20px 24px 80px;">
-    <p class="section-label reveal" style="text-align:center;">Student Ambassadors</p>
+            <section style="padding: 20px 24px 80px">
+                <p class="section-label reveal" style="text-align: center">Student Ambassadors</p>
+                <div class="team-grid" id="student-grid"></div>
+            </section>
+        </main>
 
-    <div class="team-grid">
-      <!-- Row 1 — Leadership -->
-      <div class="team-card glass reveal">
-        <div class="team-photo-wrap">
-          <img src="images/team/member1.jpg" alt="Student Ambassador"
-               onerror="this.style.display='none';this.parentElement.innerHTML='<div class=\'team-photo-placeholder\'>🌊</div>'" />
-        </div>
-        <p class="team-name">[Student Name]</p>
-        <p class="team-role">Lead Ambassador</p>
+        <!-- FOOTER -->
+        <footer>
+            <div class="footer-inner">
+                <div>
+                    <div class="footer-brand">
+                        <img src="images/logo.png" alt="Water Ambassadors" class="footer-logo" />
+                        <span class="footer-name">Water Ambassadors</span>
+                    </div>
+                    <p class="footer-quote">Alone we are a drop. Together we are an ocean.</p>
+                </div>
+                <div class="footer-right">
+                    <div class="footer-links">
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About</a>
+                        <a href="team.html">Team</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                    <p style="font-size: 0.75rem; color: var(--text-secondary)">© 2025 Water Ambassadors</p>
+                    <p class="footer-credit">
+                        Created by
+                        <a href="https://rishitc17.github.io" target="_blank" rel="noopener">Rishit Choudhary</a>
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+        <script>
+            const FACULTY = [
+                {
+                    image: 'images/team/coordinator1.jpg',
+                    name: 'Ms. [Name]',
+                    role: 'Faculty Coordinator',
+                    bio: 'Brief description of this person.',
+                },
+                {
+                    image: 'images/team/coordinator2.jpg',
+                    name: 'Mr. [Name]',
+                    role: 'Programme Advisor',
+                    bio: 'Brief description of this person.',
+                },
+            ];
+
+            const STUDENTS = [
+                { image: 'images/team/member1.jpg', name: '[Student Name]', role: 'Lead Ambassador', bio: '' },
+                { image: 'images/team/member2.jpg', name: '[Student Name]', role: 'Deputy Ambassador', bio: '' },
+                { image: 'images/team/member3.jpg', name: '[Student Name]', role: 'Campaign Head', bio: '' },
+                { image: 'images/team/member4.jpg', name: '[Student Name]', role: 'Creative & Media', bio: '' },
+                { image: 'images/team/member5.jpg', name: '[Student Name]', role: 'Outreach Coordinator', bio: '' },
+                { image: 'images/team/member6.jpg', name: '[Student Name]', role: 'Research & Data', bio: '' },
+                { image: 'images/team/member7.jpg', name: '[Student Name]', role: 'Music & Arts', bio: '' },
+                { image: 'images/team/member8.jpg', name: '[Student Name]', role: 'Community Liaison', bio: '' },
+            ];
+
+            function renderTeam(people, containerId) {
+                const grid = document.getElementById(containerId);
+                if (!grid) return;
+                people.forEach((p, i) => {
+                    const delay = i % 4;
+                    const card = document.createElement('div');
+                    card.className = `team-card glass reveal reveal-delay-${delay}`;
+                    card.innerHTML = `
+      <div class="team-photo-wrap">
+        <img src="${p.image}" alt="${p.name}"
+             onerror="this.style.display='none';this.parentElement.innerHTML='<div class=\\'team-photo-placeholder\\'>🌊</div>'" />
       </div>
+      <p class="team-name">${p.name}</p>
+      <p class="team-role">${p.role}</p>
+      ${p.bio ? `<p style="font-size:0.8rem;color:var(--text-secondary);margin-top:10px;line-height:1.6;">${p.bio}</p>` : ''}
+    `;
+                    grid.appendChild(card);
+                });
+            }
 
-      <div class="team-card glass reveal reveal-delay-1">
-        <div class="team-photo-wrap">
-          <img src="images/team/member2.jpg" alt="Student Ambassador"
-               onerror="this.style.display='none';this.parentElement.innerHTML='<div class=\'team-photo-placeholder\'>💧</div>'" />
-        </div>
-        <p class="team-name">[Student Name]</p>
-        <p class="team-role">Deputy Ambassador</p>
-      </div>
+            renderTeam(FACULTY, 'faculty-grid');
+            renderTeam(STUDENTS, 'student-grid');
+        </script>
 
-      <div class="team-card glass reveal reveal-delay-2">
-        <div class="team-photo-wrap">
-          <img src="images/team/member3.jpg" alt="Student Ambassador"
-               onerror="this.style.display='none';this.parentElement.innerHTML='<div class=\'team-photo-placeholder\'>🌿</div>'" />
-        </div>
-        <p class="team-name">[Student Name]</p>
-        <p class="team-role">Campaign Head</p>
-      </div>
-
-      <div class="team-card glass reveal reveal-delay-3">
-        <div class="team-photo-wrap">
-          <img src="images/team/member4.jpg" alt="Student Ambassador"
-               onerror="this.style.display='none';this.parentElement.innerHTML='<div class=\'team-photo-placeholder\'>🎨</div>'" />
-        </div>
-        <p class="team-name">[Student Name]</p>
-        <p class="team-role">Creative &amp; Media</p>
-      </div>
-
-      <div class="team-card glass reveal">
-        <div class="team-photo-wrap">
-          <img src="images/team/member5.jpg" alt="Student Ambassador"
-               onerror="this.style.display='none';this.parentElement.innerHTML='<div class=\'team-photo-placeholder\'>📢</div>'" />
-        </div>
-        <p class="team-name">[Student Name]</p>
-        <p class="team-role">Outreach Coordinator</p>
-      </div>
-
-      <div class="team-card glass reveal reveal-delay-1">
-        <div class="team-photo-wrap">
-          <img src="images/team/member6.jpg" alt="Student Ambassador"
-               onerror="this.style.display='none';this.parentElement.innerHTML='<div class=\'team-photo-placeholder\'>🔬</div>'" />
-        </div>
-        <p class="team-name">[Student Name]</p>
-        <p class="team-role">Research &amp; Data</p>
-      </div>
-
-      <div class="team-card glass reveal reveal-delay-2">
-        <div class="team-photo-wrap">
-          <img src="images/team/member7.jpg" alt="Student Ambassador"
-               onerror="this.style.display='none';this.parentElement.innerHTML='<div class=\'team-photo-placeholder\'>🎵</div>'" />
-        </div>
-        <p class="team-name">[Student Name]</p>
-        <p class="team-role">Music &amp; Arts</p>
-      </div>
-
-      <div class="team-card glass reveal reveal-delay-3">
-        <div class="team-photo-wrap">
-          <img src="images/team/member8.jpg" alt="Student Ambassador"
-               onerror="this.style.display='none';this.parentElement.innerHTML='<div class=\'team-photo-placeholder\'>🌏</div>'" />
-        </div>
-        <p class="team-name">[Student Name]</p>
-        <p class="team-role">Community Liaison</p>
-      </div>
-
-      <!-- Add as many cards as needed following the same pattern -->
-    </div>
-
-    <!-- Instructions note (remove before publishing) -->
-    <div class="glass reveal" style="max-width:640px;margin:48px auto 0;padding:24px;border-left:3px solid rgba(93,206,236,0.4);">
-      <p style="font-size:0.82rem;color:var(--text-secondary);line-height:1.7;">
-        <strong style="color:var(--ocean-glow);">📝 Editor's Note:</strong> Replace each <code style="color:var(--text-accent);">[Student Name]</code> with the actual team member's name. 
-        Add their photo to <code style="color:var(--text-accent);">images/team/</code> (JPG, PNG, WebP — any size; it auto-scales to fill the circle). 
-        To add more members, duplicate a <code style="color:var(--text-accent);">.team-card</code> block and update its content. 
-        <strong>Remove this note block before publishing.</strong>
-      </p>
-    </div>
-  </section>
-
-</main>
-
-<!-- FOOTER -->
-<footer>
-  <div class="footer-inner">
-    <div>
-      <div class="footer-brand">
-        <img src="images/logo.png" alt="Water Ambassadors" class="footer-logo" />
-        <span class="footer-name">Water Ambassadors</span>
-      </div>
-      <p class="footer-quote">
-        Alone we are a drop. Together we are an ocean.
-      </p>
-    </div>
-    <div class="footer-right">
-      <div class="footer-links">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="team.html">Team</a>
-        <a href="contact.html">Contact</a>
-      </div>
-      <p style="font-size:0.75rem;color:var(--text-secondary);">© 2025 Water Ambassadors</p>
-      <p class="footer-credit">
-        Created by <a href="https://rishitc17.github.io" target="_blank" rel="noopener">Rishit Choudhary</a>
-      </p>
-    </div>
-  </div>
-</footer>
-
-<script src="js/main.js"></script>
-</body>
+        <script src="js/main.js"></script>
+    </body>
 </html>
