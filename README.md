@@ -2,7 +2,7 @@
 
 A showcase website for the efforts of the students participating in the Jr. Water Ambassadors program at my school.
 
-## Live Demo
+## Live Website
 
 [Visit Website](https://waterambassadors.github.io)
 
